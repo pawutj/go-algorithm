@@ -1,9 +1,13 @@
 package binary_tree
 
 type TreeNode struct {
-	value int
+	Value int
 	Left  *TreeNode
 	Right *TreeNode
+}
+
+func GetNode(v int) TreeNode {
+	return TreeNode{v, nil, nil}
 }
 
 func GetTree() TreeNode {

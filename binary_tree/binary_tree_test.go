@@ -10,18 +10,18 @@ func TestCreateTree(t *testing.T) {
 
 	treeNode := GetTree()
 
-	assert.Equal(t, treeNode.value, 1)
-	assert.Equal(t, treeNode.Left.value, 2)
-	assert.Equal(t, treeNode.Right.value, 3)
+	assert.Equal(t, treeNode.Value, 1)
+	assert.Equal(t, treeNode.Left.Value, 2)
+	assert.Equal(t, treeNode.Right.Value, 3)
 }
 
 func TestCreateTreeComplex(t *testing.T) {
 
 	treeNode := GetTreeComplex()
 
-	assert.Equal(t, treeNode.value, 1)
-	assert.Equal(t, treeNode.Left.value, 2)
-	assert.Equal(t, treeNode.Right.value, 3)
-	assert.Equal(t, treeNode.Left.Left.value, 4)
-	assert.Equal(t, treeNode.Left.Right.value, 5)
+	assert.Equal(t, treeNode.Value, 1)
+	assert.Equal(t, treeNode.Left.Value, 2)
+	assert.Equal(t, treeNode.Right.Value, 3)
+	assert.Equal(t, treeNode.Left.Left.Value, 4)
+	assert.Equal(t, treeNode.Left.Right.Value, 5)
 }
