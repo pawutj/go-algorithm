@@ -14,8 +14,15 @@ func (q *Queue) Enqueue(n binary_tree.TreeNode) {
 	q.node = append(q.node, n)
 }
 
-func (q *Queue) Dequeue() binary_tree.TreeNode {
+func (q *Queue) Dequeue() *binary_tree.TreeNode {
+	if len(q.node) == 0 {
+		return nil
+	}
 	result := q.node[0]
 	q.node = q.node[1:]
-	return result
+	return &result
+}
+
+func (q *Queue) HasValue() bool {
+	return len(q.node) > 0
 }
