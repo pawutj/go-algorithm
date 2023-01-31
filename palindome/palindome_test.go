@@ -18,6 +18,12 @@ func TestPalindomeCheck2(t *testing.T) {
 
 func TestPalindomeRemove(t *testing.T) {
 	result := PalindomeRemove("abcdba")
-	assert.Equal(t, result, 3)
+	assert.Equal(t, result, 2)
+
+}
+
+func TestPalindomeRemove2(t *testing.T) {
+	result := PalindomeRemove("kjowoemiduaaxasnqghxbxkiccikxbxhgqnsaxaaudimeowojk")
+	assert.Equal(t, result, -1)
 
 }
